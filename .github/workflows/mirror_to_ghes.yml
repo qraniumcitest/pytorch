@@ -13,7 +13,7 @@ concurrency:
 
 jobs:
   mirror_or_close:
-    runs-on: [self-hosted, linux, x64, pytorch-runner]
+    runs-on: [self-hosted, linux, x64, pytorch-public]
     env:
       GHES_BASE_URL: https://github.qualcomm.com
       GHES_OWNER: qranium
