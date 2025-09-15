@@ -76,6 +76,7 @@ jobs:
         id: push_branch
         run: |
           set -euo pipefail
+          set -x
           PR_NUM="${{ github.event.pull_request.number }}"
           BRANCH="fork-pr-${PR_NUM}"
           git push ghes "HEAD:refs/heads/${BRANCH}" --force
