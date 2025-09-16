@@ -18,6 +18,9 @@ jobs:
       GHES_BASE_URL: https://github.qualcomm.com
       GHES_OWNER: qranium
       GHES_REPO: pytorch
+      FORK_OWNER: qraniumcitest
+      FORK_REPO: pytorch
+      
     steps:
       - name: Preflight -verify GHES env and connectivity
         run: | 
